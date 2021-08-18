@@ -8,7 +8,7 @@
 exportObjects = {
     counterFactory () {
         let _counter = 0;
-        obj = {
+        return {
             increment () {
                 _counter += 1;
                 return _counter;
@@ -17,8 +17,7 @@ exportObjects = {
                 _counter -= 1;
                 return _counter;
             }
-        }
-        return obj;
+        };
     }
 };
 module.exports = {exportObjects};
